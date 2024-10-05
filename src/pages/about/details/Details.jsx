@@ -3,7 +3,7 @@ import './Details.css'
 const Details = () => {
   return (
     <div className='details-div'>
-      <h5 className='text-center'>Profile Summery</h5>
+      <h5 className='text-center tpurple d-title'>Profile Summery</h5>
       <p className='tpurple'>Skilled Frontend React Web Developer specializing in building
         responsive interfaces to enhance user experience. Collaborative
         team player with a strong foundation in JavaScript and modern
