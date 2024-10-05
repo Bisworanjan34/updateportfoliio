@@ -1,4 +1,4 @@
-
+.nav-main{z-index:5;}
 .active-nav{
   box-shadow: 0 0 60px 23px rgb(255, 0, 238);
   border-bottom: 2px solid rgb(255, 0, 225);
