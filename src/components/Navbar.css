@@ -5,7 +5,10 @@
   transition: all 0.8s ease-in-out;
 }
 
-
+.navLactive{
+  color: rgb(255, 0, 251) !important;
+  font-weight: bold !important;
+}
 
 .nav-logo-t h5 {
   /* font-family: "Roboto", sans-serif; */
