@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet,NavLink } from 'react-router-dom'
 import './About.css'
 import Navbar from '../../components/Navbar'
 const About = () => {
@@ -10,10 +10,10 @@ const About = () => {
       <div className="container about-cont">
         <div className="row">
             <div className="col-5 d-flex ms-3 gap-3  ">
-               <Link to={'details'}> <button className='nested-p'>Details</button></Link>
-               <Link to={'experience'}><button className='nested-p'>Experience</button></Link> 
-               <Link to={'projects'}> <button className='nested-p'>Projects</button></Link>
-               <Link to={'education'}> <button className='nested-p'>Education</button></Link>
+              <NavLink to={'details'} className={({isActive})=>(isActive?'aboutlink':'')}> <h5 className='nested-p'>Details</h5></NavLink>
+               <NavLink to={'experience'} className={({isActive})=>(isActive?'aboutlink':'')}><h5 className='nested-p'>Experience</h5></NavLink> 
+               <NavLink to={'projects'} className={({isActive})=>(isActive?'aboutlink':'')}> <h5 className='nested-p'>Projects</h5></NavLink>
+               <NavLink to={'education'} className={({isActive})=>(isActive?'aboutlink':'')}> <h5 className='nested-p'>Education</h5></NavLink>
             </div>
         </div>
         <div className="row outlet-about">
