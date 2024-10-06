@@ -6,9 +6,13 @@
 .nested-p{
     border: none;
     background: transparent;
-    color: white;
     font-family: "Edu AU VIC WA NT Guides", cursive;
    font-weight: bold;
+}
+.aboutlink{
+    color: rgb(255, 0, 255) !important;
+    /* color: red !important; */
+    font-weight: bold;
 }
 .outlet-about{
     margin: 16px 0;
