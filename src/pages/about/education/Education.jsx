@@ -10,11 +10,7 @@ const Education = () => {
       <h5 className='twht'>Qualifications</h5>
       <div className=" container educations">
         <div className="row">
-<<<<<<< HEAD
         <div className="col-auto">
-=======
-              <div className="col-auto">
->>>>>>> 3705b6af07e21c711f25b6c60b01972bb3afc017
       <dl>
         <dt>MERN-STACK</dt>
         <dd><h5>Webdeveloper</h5></dd>
@@ -23,11 +19,6 @@ const Education = () => {
         <dd>year of pass out : 2024</dd>
       </dl>
       </div>
-<<<<<<< HEAD
-
-=======
-          
->>>>>>> 3705b6af07e21c711f25b6c60b01972bb3afc017
           <div className="col-auto">
       <dl>
         <dt>BTECH-DEGREE</dt>
