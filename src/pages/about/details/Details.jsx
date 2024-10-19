@@ -10,7 +10,11 @@ const Details = () => {
         web technologies. Delivers high-quality projects on time with keen
         attention to detail and commitment to staying updated with
         industry trends.</p>
+<<<<<<< HEAD
       <h5 className='twht'>Key Skills</h5>
+=======
+      <h5 className='twht' >Key Skills</h5>
+>>>>>>> 3705b6af07e21c711f25b6c60b01972bb3afc017
       <ul>
         <li>HTML Web Designer
         </li><span></span>

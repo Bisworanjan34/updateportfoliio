@@ -27,15 +27,15 @@ const Projects = () => {
         <div className="row text-center">
           <div className="col-auto col-lg-4 ">
             <h5 className='h3'><FontAwesomeIcon icon={faReact}/>React.js</h5>
-            <b >10+</b>
+            <b className="twht" >10+</b>
           </div>
           <div className="col-auto col-lg-4">
           <h5 className='h3'><FontAwesomeIcon icon={faJava}/>javascript</h5>
-          <b >20+</b>
+          <b className="twht" >20+</b>
           </div>
           <div className="col-auto col-lg-4">
           <h5 className='h3'><FontAwesomeIcon icon={faCss3}/>css</h5>
-          <b >25+</b>
+          <b className="twht" >25+</b>
           </div>
         </div>
         <div className="row">
