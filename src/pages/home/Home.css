@@ -114,14 +114,17 @@ grid-template-columns: 1fr 1fr;
   /* font-size: 40px; */
 }
 .name-div .btn1 {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     rgb(122, 0, 122),
     rgb(255, 0, 230)
-  );
+  ); */
+  border: 1px solid rgb(255, 0, 247);
+  box-shadow: 0 0 10px 3px rgb(255, 0, 247);
+  background: purple;
   color: white;
   padding: 3px 17px;
-  border: none;
+  /* border: none; */
   border-radius: 15px;
   margin-right: 10px;
 }
@@ -155,6 +158,27 @@ grid-template-columns: 1fr 1fr;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: rgb(247, 0, 255);
+}
+@media screen and (max-width:1890px){
+  .profile-img-div {
+    height: 350px;
+    width: 350px;
+    margin-top: 13.5rem;
+  }
+  .profile-img-div img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width:1340px){
+  .profile-img-div {
+    height: 300px;
+    width: 300px;
+    margin-top: 8.5rem;
+  }
+  .profile-img-div img {
+    height: 370px;
+  }
 }
 @media screen and (max-width: 990px) {
   .profile-name {
@@ -208,10 +232,14 @@ grid-template-columns: 1fr 1fr;
   .social-icon p{font-size: 10px;}
   .social-icon{margin-left: 4.5rem}
   .btn1,.btn2{font-size: 11px;}
-  .profile-img{margin-top: -57rem;}
+  .profile-img{margin-top:-5.2rem;
+    /* background-color: red; */
+  }
+  
 
 }
 @media screen and (max-width: 403px) {
+  
   .profile-name {
     font-size: 30px;
   }
@@ -261,13 +289,12 @@ grid-template-columns: 1fr 1fr;
   }
   50% {
     transform: scale(1.15);
-    background-image: linear-gradient(to right, rgb(0, 0, 122),
-    rgb(0, 4, 255));
+   
   }
   100% {
     transform: scale(1);
-    background-image: linear-gradient(to right,  rgb(122, 0, 122),
-    rgb(255, 0, 230));
+    background-image: linear-gradient(to right,  rgb(240, 0, 240),
+    rgb(141, 0, 127));
   }
 }
 .profile-cont{
@@ -287,3 +314,38 @@ grid-template-columns: 1fr 1fr;
   transition: all 1.3s ease-in-out;
 }
 .profile-img-div{margin-top: 5rem;}
+
+.profile-img-div{
+  position: relative;
+}
+.profile-img-div .img-anim{
+  /* background: red; */
+  /* border: 2px solid rgb(255, 255, 255); */
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  top: 0%;left: 0%;
+ 
+}
+.anim{
+  animation: imganim 0.3s linear infinite;
+}
+
+@keyframes imganim {
+  from{
+    border: 3px solid white;
+    border-top: 3px solid rgb(249, 0, 249); 
+    border-top: 10px solid rgb(0, 232, 249);     
+    border-right: 3px solid rgb(232, 249, 0);     
+    border-bottom: 3px solid rgb(4, 0, 249);       
+    transform: rotate(0);
+  }
+  to{
+    border: 3px solid white;
+    border-top: 3px solid rgb(0, 232, 249);     
+    border-right: 3px solid rgb(232, 249, 0);     
+    border-bottom: 3px solid rgb(4, 0, 249);     
+    transform: rotate(360deg);
+  }
+}
