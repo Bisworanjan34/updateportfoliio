@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faJava, faReact, faRProject } from '@fortawesome/free-brands-svg-icons'
+import Projectitem from './projectitem/Projectitem'
+import projectData from './projectitem/projectData'
 const Projects = () => {
+  let [pdata,setPdata]=useState(projectData)
   return (
     <div className='projects-div'>
-      <h5 className='text-light'>projects</h5>
+      <h5 className='text-light text-center'>My-projects</h5>
+        <div className="container d-flex justify-content-evenly flex-wrap">
+          {
+            pdata.map((p,i)=>{
+              return(
+                <div className="" key={i}>
+             
+                  <Projectitem p={p}/>
+                </div>
+            
+              )
+            })
+          }
+        </div>
+
       <div className="container-fluid">
         <div className="row text-center">
           <div className="col-auto col-lg-4 ">

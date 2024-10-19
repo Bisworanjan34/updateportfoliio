@@ -1,14 +1,20 @@
-.nested-p:focus{
+/* .nested-p:focus{
     color:  rgb(255, 0, 255);
     border-left: 2px solid rgb(255, 0, 255);
     padding: 0 5px;
-}
+} */
+
 .nested-p{
+    font-size: 16px;
     border: none;
-    background: transparent;
-    color: white;
+    /* color: white; */
     font-family: "Edu AU VIC WA NT Guides", cursive;
-   font-weight: bold;
+   /* font-weight: bold; */
+}
+.aboutlink{
+    color: rgb(255, 0, 255) !important;
+    /* color: red !important; */
+    font-weight: bold;
 }
 .outlet-about{
     margin: 16px 0;
@@ -21,5 +27,8 @@
 @media screen and (max-width:423px){
     .about-cont a{
     font-size: 10px;
+    }
+    .about-list h5{
+        font-size: 13px;
     }
 }

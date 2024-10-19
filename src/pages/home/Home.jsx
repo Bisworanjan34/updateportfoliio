@@ -12,6 +12,7 @@ const Home = () => {
   let hireRef=useRef()
   let ptitleRef=useRef()
   let pimgRef=useRef()
+  let animRef=useRef(null)
 
   useEffect(()=>{
      ptitleRef.current.style.transform='translatex(0)'
@@ -20,7 +21,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar imgref={imgRef} reactlogo={reactLogo} hireRef={hireRef} ptitleRef={ptitleRef} pimgRef={pimgRef}/>
+      <Navbar imgref={imgRef} reactlogo={reactLogo} hireRef={hireRef} ptitleRef={ptitleRef} pimgRef={pimgRef} animRef={animRef}/>
       <div className="container home-main " >
         <div className="row h-100 align-items-center justify-content-evenly profile-cont">
           <div className=" col-lg-5 col-md-6 col-sm-12 col-12 profile-title " ref={ptitleRef}>
@@ -43,9 +44,12 @@ const Home = () => {
              <Link to={'/about'}> <button className='btn2 mt-2' >About me</button></Link>
             </div>
           </div>
-          <div className="col-auto col-md-5 col-sm-12 text-center  h-75    profile-img " ref={pimgRef}>
+          <div className="col-auto col-md-5 col-sm-12 text-center  h-75    profile-img" ref={pimgRef}>
             <div className='profile-img-div  overflow-hidden  mx-auto' ref={imgRef}>
             <img src={profile} alt=""  className=''  />
+            <div className="img-anim " ref={animRef}>
+
+            </div>
             </div>
             
           </div>

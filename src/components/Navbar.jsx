@@ -1,22 +1,34 @@
-import React, { useRef } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useCallback, useRef } from 'react'
+import { Link,NavLink } from 'react-router-dom'
 import profile from '../assets/profile-2.jpg'
 import toggleaudio from '../audio/waterdrop.mp3'
 import './Navbar.css'
-const Navbar = ({imgref,reactlogo,hireRef}) => {
+const Navbar = ({imgref,reactlogo,hireRef,animRef}) => {
 
   let toggleRef=useRef()
   let navRef=useRef()
   let toggleaudioRef=useRef()
 
-  let togglefun=()=>{
-    navRef.current.classList.toggle('active-nav')
-    toggleRef.current.classList.toggle('active')
-    imgref.current.classList.toggle('active-img')
-    reactlogo.current.classList.toggle('active-react')
-    hireRef.current.classList.toggle('active-hire')
-    toggleaudioRef.current.play()
-  }
+  // let togglefun=()=>{
+  //   navRef.current.classList.toggle('active-nav')
+  //   toggleRef.current.classList.toggle('active')
+  //   imgref.current.classList.toggle('active-img')
+  //   reactlogo.current.classList.toggle('active-react')
+  //   hireRef.current.classList.toggle('active-hire')
+  //   animRef.current.classList.toggle('anim')
+  //   toggleaudioRef.current.play()
+  // }
+  const togglefun = useCallback(() => {
+    navRef.current.classList.toggle('active-nav');
+    toggleRef.current.classList.toggle('active');
+    imgref.current.classList.toggle('active-img');
+    reactlogo.current.classList.toggle('active-react');
+    hireRef.current.classList.toggle('active-hire');
+    animRef.current.classList.toggle('anim');
+    toggleaudioRef.current.play();
+  }, [imgref, reactlogo, hireRef, animRef]);
+  
+  
   return (
     <div>
     <div className="container-fluid py-2 nav-main" style={{height:'55px'}} ref={navRef}>
@@ -27,10 +39,10 @@ const Navbar = ({imgref,reactlogo,hireRef}) => {
                 </div>
               </div>
             <div className="col-5 col-md-4 col-sm-4 mt-2 d-flex gap-lg-4 gap-md-2 gap-2 links ">
-                <Link to={'/'}><h5>Home</h5></Link>
-                <Link to={'/about'}><p>About</p></Link>
-                <Link to={'/contact'}><p>Contact</p></Link>
-                <Link to={'/service'}><p>Service</p></Link>
+                <NavLink to={'/'} className={({isActive})=>(isActive? 'navLactive':'')}><h5>Home</h5></NavLink>
+                <NavLink to={'/about'}className={({isActive})=>(isActive? 'navLactive':'')}><p>About</p></NavLink>
+                <NavLink to={'/contact'}className={({isActive})=>(isActive? 'navLactive':'')}><p>Contact</p></NavLink>
+                <NavLink to={'/service'}className={({isActive})=>(isActive? 'navLactive':'')}><p>Service</p></NavLink>
             </div>
 
             <div className="col-4 col-md-2 col-sm-1   toggle-main">

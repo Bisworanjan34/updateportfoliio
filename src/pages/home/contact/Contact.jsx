@@ -9,6 +9,18 @@ const Contact = () => {
     <div className='contact-main'>
       <Navbar/>
      <div className="container contact-div">
+      <div className=" p-2 border d-flex gap-2">
+        <div className="">
+          <h1>Name</h1>
+          <h1>Number</h1>
+        </div>
+        <div className="">
+          <input type="text" /><br />
+          <input type="text" />
+        </div>
+       
+      </div>
+
       <div className="row my-5 pt-3 text-center align-items-center">
         <div className="col-auto col-lg-4 fw-bold ">
         <p className='display-2 tpurple'><FontAwesomeIcon icon={faUserCircle}/></p>

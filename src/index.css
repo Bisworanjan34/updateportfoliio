@@ -1,4 +1,4 @@
-/* :root {
+ :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+  /*
 
 a {
   font-weight: 500;
@@ -73,23 +74,23 @@ button:focus-visible {
 }
 :root a:hover{
   color:  rgb(255, 0, 255);
-  font-weight: bold;
+  font-weight: bold; 
   
 }
 *{
   margin: 0;padding: 0;
 }
-body{
-  /* font-family:  "Edu AU VIC WA NT Guides", cursive; */
-  /* font-family: "Oleo Script", system-ui; */
+/* font-family:  "Edu AU VIC WA NT Guides", cursive; */
+/* font-family: "Oleo Script", system-ui; */
+/* body{
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   font-family: "Outfit", sans-serif;
   
-}
-body::after{
+} */
+/* body::after{
   
-}
+} */
 
 .wht{background: white;}
 .red{background-color: red;}
