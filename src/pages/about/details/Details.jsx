@@ -12,7 +12,6 @@ const Details = () => {
         industry trends.</p>
 
       <h5 className='twht'>Key Skills</h5>
-      <h5 className='twht' >Key Skills</h5>
 
       <ul>
         <li>HTML Web Designer
