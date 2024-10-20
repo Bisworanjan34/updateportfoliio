@@ -19,7 +19,7 @@ const Education = () => {
         <dd>year of pass out : 2024</dd>
       </dl>
       </div>
-          <div className="col-auto">
+          <div className="col-auto ">
       <dl>
         <dt>BTECH-DEGREE</dt>
         <dd><h5> Mechanical engineering</h5></dd>

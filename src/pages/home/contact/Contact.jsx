@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <div className='contact-main'>
       <Navbar/>
-      <div className="message-cont p-2 my-4 " style={{height:'370px'}}>
+      <div className="message-cont p-2 my-4 ">
        <div className="talk ">
             <div className="sec-1">
               <h1>Let's talk</h1>
@@ -50,6 +50,7 @@ const Contact = () => {
        </div>
        <div className="message ">
           <div className="sec-2">
+            <h1>Let's message</h1>
              <form action="" onSubmit={onSubmit}>
                <label>Your Name</label><br />
                <input type="text"placeholder='Enter your name'name='name' /><br />
@@ -66,17 +67,17 @@ const Contact = () => {
 
      <div className=" contact-div ">
      
-        <div className=" fw-bold text-center">
+        <div className="user-cont fw-bold text-center">
         <p className='display-2 tpurple'><FontAwesomeIcon icon={faUserCircle}/></p>
         <p className='tpurple'>contact no: 7978092266</p>
         </div>
           
-        <div className=" fw-bold text-center">
+        <div className="user-cont  fw-bold text-center">
          <p className='display-2 tpurple'> <FontAwesomeIcon icon={faAt} /></p>
           <p className='tpurple'>gmail: bisworanjan34@gmail.com</p>
         </div>
 
-        <div className=" fw-bold text-center">
+        <div className="user-cont  fw-bold text-center">
        <p className='display-2 tpurple'> <FontAwesomeIcon icon={faWhatsapp}/></p>
         <p className='tpurple'>contact no: 8917377258</p>
         </div>

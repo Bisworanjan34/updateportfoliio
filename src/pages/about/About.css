@@ -24,6 +24,8 @@
     color: rgb(255, 0, 255) !important;
     /* color: red !important; */
     font-weight: bold;
+    border-bottom: 1px solid rgb(255, 255, 255);
+   
 }
 .outlet-about{
     margin: 16px 0;
@@ -37,11 +39,8 @@
     .about-cont a{
     font-size: 10px;
     }
-<<<<<<< HEAD
     .about-list h5{
-        font-size: 13px;
+        font-size: 14px;
     }
 }
-=======
-}
->>>>>>> 3705b6af07e21c711f25b6c60b01972bb3afc017
+

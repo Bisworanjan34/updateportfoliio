@@ -31,7 +31,7 @@ const Navbar = ({imgref,reactlogo,hireRef,animRef}) => {
   
   return (
     <div>
-    <div className="container-fluid py-2 nav-main" style={{height:'55px'}} ref={navRef}>
+    <div className="container-fluid py-2 nav-main"  ref={navRef}>
              <div className='row align-items-center'>
               <div className="col-3 col-md-3 col-sm-2  text-end">
                 <div className="nav-logo-t fst-italic p-0">

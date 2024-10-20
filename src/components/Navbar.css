@@ -1,4 +1,7 @@
-.nav-main{z-index:5;}
+.nav-main{
+  z-index:5;
+  height: 70px; 
+}
 .active-nav{
   box-shadow: 0 0 60px 23px rgb(255, 0, 238);
   border-bottom: 2px solid rgb(255, 0, 225);
@@ -8,6 +11,8 @@
 .navLactive{
   color: rgb(255, 0, 251) !important;
   font-weight: bold !important;
+ 
+  
 }
 <<<<<<< HEAD
 
@@ -15,16 +20,12 @@
 >>>>>>> 3705b6af07e21c711f25b6c60b01972bb3afc017
 
 .nav-logo-t h5 {
-  /* font-family: "Roboto", sans-serif; */
-  /* font-weight: 100; */
+ 
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  /* font-style: normal; */
-  /* font-style: normal; */
   font-weight: bold;
   font-size: 22px;
-  color: white;
+  color:white;
   
 
 }
